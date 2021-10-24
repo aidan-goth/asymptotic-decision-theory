@@ -1,6 +1,8 @@
-# R code for calculations for Table 1
+# Code for calculations for Table 1
 
-# Create the function that evaluate G(0) with \mu_X - \mu_Y = 1
+# Create the function that evaluates G(0) with \mu_X - \mu_Y = 1
+
+library('pracma')
 
 G <- function(s,b) {
 	.5 * (1 + erf( -sqrt( (1+b)/(1-b) / (2*s) ) ) )
